@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>小龐包包購物網</title>
+    <link rel="stylesheet" href="day5.css" />
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link
+      href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- jQuery文件。務必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="day5.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div>
+        <form action="day5-1.html" method="post">
+          <div id="img">
+            <img
+              class="col-3 bg-light p-3 border"
+              src="https://diz36nn4q02zr.cloudfront.net/webapi/imagesV3/Original/SalePage/6335786/0/637750385469270000?v=1"
+              width="500px"
+              alt="purse"
+            />
+            <h3>名稱:VEMAR極簡時尚經典磚塊小方包(奶茶可可)</h3>
+          </div>
+          <select
+            class="form-select form-select-lg mb-3"
+            aria-label=".form-select-lg example"
+            id="item_from"
+            onchange="print_value()"
+          >
+            <option class="optionValue" value="VEMAR" selected>
+              VEMAR極簡時尚經典磚塊小方包(奶茶可可)
+            </option>
+            <option class="optionValue" value="Sarlisi">
+              夏麗絲夏季女包高級感小眾包包百搭斜背馬鞍包鏈帶包大號（小包款）
+            </option>
+          </select>
+          <div class="number">
+            <span>數量:</span>
+            <input type="number" name="number" min="1" max="10" id="number" />
+          </div>
+        </form>
+        <a href="day5-1.html"
+          ><button name="submitBtn" type="submit" class="btn btn-success">
+            去買單
+          </button></a
+        >
+      </div>
+    </div>
+  </body>
+</html>

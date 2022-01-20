@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery文件。務必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <form action="http://140.127.196.92:1234/formws5" method="POST" class="form-select form-select-lg mb-3">
+        <h1>你的購物車</h1>
+        <div>
+            數量:1
+        </div>
+        <div>
+            <span>你來自:</span>
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="come_from">
+                <option value="Taipei" selected>台北</option>
+                <option value="Taichung">台中</option>
+                <option value="Tainan">台南</option>
+                <option value="Kaohsiung">高雄</option>
+            </select>
+        </div>
+        <div>
+            <span>地址:</span>
+            <input type="text">
+        </div>
+        <div>
+            <span>性別:</span>
+            <input type="radio" name="sex" value="man" checked>男
+            <input type="radio" name="sex" value="female">女
+            <input type="radio" name="sex" value="others">其他
+        </div>
+        <div>
+            <div>請留下您寶貴的意見</div>
+            <textarea name="comment" id="" cols="40" rows="10" placeholder="請留下約100字以內的意見。"></textarea>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-success">送出</button>
+        </div>
+    </form>
+</body>
+
+</html>
